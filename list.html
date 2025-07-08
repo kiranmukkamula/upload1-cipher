@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="my">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Support</li>
+    </ul>
+    <button onclick="fun()">add</button>
+    <button onclick="del()">remove</button>
+    <script>
+        let count=1;
+        function fun()
+        {
+            const my=document.querySelector(".my");
+            const li=document.createElement("li");
+            li.textContent=`new ${count++}`;
+            my.appendChild(li);
+        }
+        function del(){
+            const ul=document.querySelector(".my");
+             if(ul.lastElementChild)
+             {
+                ul.removeChild(ul.lastElementChild);
+                count--;
+             }
+        }
+    </script>
+</body>
+</html>

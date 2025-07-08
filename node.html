@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Navigation</title>
+</head>
+<body>
+  <div class="parent">
+    <p>First Paragraph</p>
+    <p id="second">Second Paragraph</p>
+    <p>Third Paragraph</p>
+  </div>
+
+  <script>
+    const secondPara = document.getElementById("second");
+
+    console.log("Parent node of second paragraph:");
+    console.log(secondPara.parentNode);  
+
+    console.log("Child nodes of parent div:");
+    console.log(secondPara.parentNode.childNodes);
+
+   
+    console.log("Next sibling of second paragraph:");
+    console.log(secondPara.nextSibling); 
+
+    console.log("Next element sibling of second paragraph:");
+    console.log(secondPara.nextElementSibling); 
+    
+  </script>
+</body>
+</html>
