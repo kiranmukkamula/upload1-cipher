@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter Number 1<input type="number" placeholder="num1" class="n1"></label><br>
+        <label>Enter Number 2<input type="number" placeholder="num2" class="n2"></label><br>
+        <button onclick="fun()">Sum</button><br>
+        <p>Sum is: <h2 class="out">0</h2></p>
+        <script>
+            const fun =()=>{
+                const n1=document.querySelector(".n1").value;
+                const n2=document.querySelector(".n2").value;
+                let sum=Number(n1)+Number(n2);
+                const out=document.querySelector(".out").textContent=sum;
+              
+            }
+        </script>
+</body>
+</html>
