@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image with Media Queries</title>
+  <style>
+    .image {
+      width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #000;
+    }
+
+    @media (max-width: 600px) {
+      .image {
+        width: 100%;    
+        border-color: red; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image Resizes with Media Query</h2>
+  <img class="image" src="https://images.pexels.com/photos/302820/pexels-photo-302820.jpeg?cs=srgb&dl=pexels-pixabay-302820.jpg&fm=jpg" alt="Responsive Sample Image">
+
+</body>
+</html>
